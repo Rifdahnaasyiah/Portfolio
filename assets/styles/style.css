@@ -204,10 +204,10 @@ footer {
   nav .menu {
     display: none;
     flex-direction: column;
-    align-items: center; /* Hidden by default */
+    align-items: center;
   }
   nav .menu.active {
-    display: flex; /* Show when active */
+    display: flex; 
   }
   nav ul li {
     width: 100%;
@@ -218,17 +218,35 @@ footer {
 /* Gaya khusus untuk tampilan di bawah lebar 991px (mobile) */
 @media screen and (max-width: 991px) {
   .tombol-menu {
-    display: flex;  /* Tampilkan tombol menu */
+    display: flex;  
   }
 
   nav .menu {
-    display: none;  /* Sembunyikan menu secara default */
+    display: none; 
   }
 
   nav .menu.active {
-    display: flex;  /* Tampilkan menu saat tombol ditekan */
-    flex-direction: column;  /* Tata menu secara kolom */
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav .menu li {
+    list-style: none;
+    width: 100%;
+    border: none;
+  }
+
+  nav .menu li a {
+    text-decoration: none;
+    color: #fffefe;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
   }
 }
 
